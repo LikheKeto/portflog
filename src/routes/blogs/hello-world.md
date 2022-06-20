@@ -1,9 +1,9 @@
 ---
 title: Hello World
-author: Jeff
 date: 2022-05-27
 layout: blog
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget massa sit amet arcu varius lacinia nec quis lacus.
+tags: test3, test1, test2
 ---
 
 # h1

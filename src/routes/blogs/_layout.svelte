@@ -2,14 +2,13 @@
 	import { darkMode } from '$lib/store';
 	import { convertDate } from '$lib/utils';
 	export let title;
-	export let author;
 	export let date;
 
 	$: textColor = $darkMode ? 'text-primary-light' : 'text-primary-dark';
 </script>
 
 <h2 class="my-4 text-4xl font-semibold">{title}</h2>
-<p class="my-4 text-gray-500">by {author}, {convertDate(date)}</p>
+<p class="my-4 text-gray-500">{convertDate(date)}</p>
 <div
 	class="prose {textColor} lg:prose-xl
      prose-blockquote:text-primary-light prose-blockquote:border-darkerBlue
