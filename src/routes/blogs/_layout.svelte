@@ -18,7 +18,8 @@
 <h2 class="my-4 text-4xl font-semibold">{title}</h2>
 <p class="my-4 text-gray-500">{convertDate(date)}</p>
 <div
-	class="prose {textColor} lg:prose-xl
+	style="max-width: fit-content;"
+	class="prose {textColor}
      prose-blockquote:text-primary-light prose-blockquote:border-darkerBlue
      prose-blockquote:bg-highlight prose-a:no-underline
      {$darkMode ? 'prose-a:text-primary-light' : 'prose-a:text-primary-dark'}

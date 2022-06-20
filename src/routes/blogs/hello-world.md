@@ -34,7 +34,7 @@ this is a `code` between general statement.
 
 [title](https://www.example.com)
 
-![alt text](/deepika.jpg)
+![alt text](/images/deepika.jpg)
 
 ```
 {

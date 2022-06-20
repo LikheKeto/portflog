@@ -10,6 +10,7 @@ export async function get() {
 		return { ...post.metadata, path: postPath };
 	});
 	tags = [...new Set(tags)];
+	tags.sort();
 	if (!tags.length) {
 		return { status: 404 };
 	}

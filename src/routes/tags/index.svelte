@@ -1,6 +1,5 @@
 <script lang="ts">
 	export let tags: string[];
-	console.log(tags);
 </script>
 
 <ul class="flex flex-col gap-2">
