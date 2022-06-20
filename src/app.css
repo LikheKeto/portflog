@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	transition: background 300ms;
+	font-family: monospace;
+	font-size: 1rem;
+}
+
+a {
+	@apply border-b-highlight border-b-2 hover:bg-highlight hover:text-primary-light transition-all;
+}
+
+.body-bg-dark {
+	@apply bg-primary-dark text-primary-light;
+}
+
+.body-bg-light {
+	@apply bg-primary-light text-primary-dark;
+}
+
+.container {
+	@apply w-full px-4 sm:w-[500px] sm:px-0 md:w-[768px] md:px-0 lg:w-[768px] lg:px-0 xl:w-[768px] xl:px-0 2xl:w-[1000px] 2xl:px-0;
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: red;
+	background: yellow;
+}
+
+::selection {
+	@apply text-primary-light bg-highlight;
+}
