@@ -5,7 +5,7 @@ export async function get({ params }: any) {
 	// let tags: string[] = [];
 	const allPostFiles = import.meta.globEager('../blogs/*.{svx,md}');
 	const allPosts = Object.entries(allPostFiles).map(([path, post]) => {
-		const postPath = path.slice(2, -3);
+		const postPath = path.slice(3, -3);
 		let tagsArray = post.metadata.tags.split(',');
 		tagsArray = tagsArray.map((tag: string) => tag.trim());
 		return {

@@ -5,8 +5,8 @@
 
 <ul class="flex flex-col gap-2">
 	{#each tags as tag}
-		<li>
-			<a href="/tags/{tag}">#{tag}</a>
+		<li style="list-style-type: square;" class="list-inside">
+			<a sveltekit:prefetch href="/tags/{tag}">{tag}</a>
 		</li>
 	{/each}
 </ul>
