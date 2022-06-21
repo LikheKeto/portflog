@@ -4,9 +4,16 @@
 	import Icon from '@iconify/svelte';
 	export let title;
 	export let date;
+	export let excerpt;
+	export let tags;
 
 	$: textColor = $darkMode ? 'text-primary-light' : 'text-primary-dark';
 </script>
+
+<svelte:head>
+	<meta name="description" content={excerpt} />
+	<meta name="keywords" content={tags} />
+</svelte:head>
 
 <div class="flex w-full justify-end">
 	<button
